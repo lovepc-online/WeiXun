@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+  <html lang="zh-cn">
+  <head>
+      <meta charset="UTF-8">
+      <title>维讯科技 - 人员介绍</title>
+      <link rel="icon" href="../img/logo.ico">
+      <style>
+        *{
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+}
+div{
+  float: left;
+}
+body{
+    /* 100%的窗口高度 */
+    height: 100vh;
+    /* 弹性布局 水平+垂直居中 */
+    align-items: center;
+    /*display: flex;*/
+    justify-content: center;
+    background: linear-gradient(200deg,#517fa4,#517fa4);
+}
+
+.card{
+    /* 相对定位 */
+    position: relative;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    background-color: #758a99;
+    border-radius: 20px;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    /* 弹性布局 */
+    display: flex;
+    /* 元素纵向排列 */
+    flex-direction: column;
+    /* 居中 */
+    align-items: center;
+    color: #fff;
+    /* 阴影 */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    /* 不让其他被挤压 */
+    flex-shrink: 0;
+
+}
+.card .photo img{
+    width: 100%;
+    height: 100%;
+    /* 保持原有尺寸比例,裁切长边 */
+    object-fit: cover;
+}
+
+/* 默认大图 */
+.card .photo{
+    /* 绝对定位 */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    /* 动画过渡 */
+    transition: 0.5s;   
+}
+
+/* 鼠标移入变小图 */
+.card:hover .photo{
+    top: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/* 这里加个黑色到透明的渐变背景，可以更好的看清楚名字 */
+.card .photo::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent 50%,#222);
+}
+
+.card h1{
+    position: absolute;
+    top: 370px;
+    transition: 0.5s;
+}
+
+.card:hover h1{
+    top: 170px;
+}
+
+.card h2{
+    margin-top: 220px;
+    width: 80%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.card p {
+    width: 90%;
+    text-indent: 32px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+
+.card a{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.card a:hover{
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+      </style>
+  </head>
+  <body>
+      <!-- 开始 -->
+    <div class="card">
+        <div class="photo">
+            <img src="http://q2.qlogo.cn/headimg_dl?dst_uin=1814669296&spec=100">
+        </div>
+        <h1>On-line</h1>
+        <h2>知名前端工程师</h2>
+        <p>On-line参加的项目数不胜数，其中大部分他都担任了前端工程师。不难看出他在前端这方面的实力。</p>
+        <a href="#">了解更多</a>
+    </div><div class="card">
+        <div class="photo">
+            <img src="http://q2.qlogo.cn/headimg_dl?dst_uin=226970284&spec=100">
+        </div>
+        <h1>猫猫</h1>
+        <h2>维讯创始人</h2>
+        <p>猫猫是维讯这个云主机项目的负责人，有需要、疑问的请找他。</p>
+        <a href="#">了解更多</a>
+    </div>
+    
+    <div class="card">
+        <div class="photo">
+            <img src="http://q2.qlogo.cn/headimg_dl?dst_uin=3243756665&spec=100">
+        </div>
+        <h1>沙雕COM</h1>
+        <h2>维讯负责人</h2>
+        <p>沙雕COM是维讯的负责人，有问题也可以找他。</p>
+        <a href="#">了解更多</a>
+    </div>
+    <div class="card">
+        <div class="photo">
+            <img src="http://q2.qlogo.cn/headimg_dl?dst_uin=480275464&spec=100">
+        </div>
+        <h1>him</h1>
+        <h2>技术支持</h2>
+        <p>him是我们的技术支持，精通Windows。有问题可以找他。</p>
+        <a href="#">了解更多</a>
+    </div>
+    <div class="card">
+        <div class="photo">
+            <img src="http://q2.qlogo.cn/headimg_dl?dst_uin=2647764002&spec=100">
+        </div>
+        <h1>SYSTEM_VM_LWH</h1>
+        <h2>负责人</h2>
+        <p>SYSTEM_VM_LWH也是维讯的负责人，易语言很熟练。有问题可以找他。</p>
+        <a href="#">了解更多</a>
+    </div>
+    <div class="card">
+        <div class="photo">
+            <img src="http://q2.qlogo.cn/headimg_dl?dst_uin=2622594314&spec=100">
+        </div>
+        <h1>秋</h1>
+        <h2>昆明雨梦创文化传媒有限公司执行董事</h2>
+        <p>未知</p>
+        <a href="#">了解更多</a>
+    </div>
+    <div class="card">
+        <div class="photo">
+            
+        </div>
+        <h1>未知</h1>
+        <h2>未知</h2>
+        <p>未知</p>
+        <a href="#">了解更多</a>
+    </div>
+    <div class="card">
+        <div class="photo">
+            
+        </div>
+        <h1>未知</h1>
+        <h2>未知</h2>
+        <p>未知</p>
+        <a href="#">了解更多</a>
+    </div>
+  </body>
+</html>
